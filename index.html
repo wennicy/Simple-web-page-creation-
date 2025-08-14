@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九江 - 江南名城，山水之都</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#059669',
+                        accent: '#dc2626'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">九江</h1>
+                    <span class="ml-2 text-gray-600 hidden sm:block">江南名城</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="nav-link text-gray-700 hover:text-primary transition-colors">首页</a>
+                    <a href="#attractions" class="nav-link text-gray-700 hover:text-primary transition-colors">景点</a>
+                    <a href="#culture" class="nav-link text-gray-700 hover:text-primary transition-colors">文化</a>
+                    <a href="#food" class="nav-link text-gray-700 hover:text-primary transition-colors">美食</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors">联系</a>
+                </div>
+                <button class="md:hidden mobile-menu-btn">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#hero" class="block px-3 py-2 text-gray-700 hover:text-primary">首页</a>
+                <a href="#attractions" class="block px-3 py-2 text-gray-700 hover:text-primary">景点</a>
+                <a href="#culture" class="block px-3 py-2 text-gray-700 hover:text-primary">文化</a>
+                <a href="#food" class="block px-3 py-2 text-gray-700 hover:text-primary">美食</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="hero-slider absolute inset-0">
+            <div class="slide active" style="background-image: url('https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/30f459ed-54fb-4eb7-9f0b-913770abdc2a/image_1755140988_2_1.jpg')"></div>
+            <div class="slide" style="background-image: url('https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/a7aac169-53d9-4b3f-a676-e74b1fb67292/image_1755140996_1_1.jpg')"></div>
+            <div class="slide" style="background-image: url('https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/b73cb02a-4b3d-4c7c-adcf-b0c830f1dec1/image_1755141001_4_1.jpg')"></div>
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">九江</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">江南名城 · 山水之都 · 文化古城</p>
+            <div class="space-x-4">
+                <button class="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105">
+                    <i class="fas fa-map-marked-alt mr-2"></i>探索景点
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 rounded-full transition-all">
+                    <i class="fas fa-play mr-2"></i>观看视频
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- 城市介绍 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">千年古城 九江</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    九江，古称浔阳、柴桑、江州，是江西省地级市，位于江西省最北部，赣、鄂、皖、湘四省交界处，
+                    号称"三江之口、七省通衢"与"天下眉目之地"，有"江西北大门"之称。
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mountain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">名山胜景</h3>
+                    <p class="text-gray-600">庐山世界文化遗产，匡庐奇秀甲天下</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-water text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">江湖汇聚</h3>
+                    <p class="text-gray-600">长江与鄱阳湖交汇，水运发达</p>
+                </div>
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">文化底蕴</h3>
+                    <p class="text-gray-600">千年文化古城，人文荟萃</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要景点 -->
+    <section id="attractions" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">著名景点</h2>
+                <p class="text-lg text-gray-600">探索九江的自然风光与人文景观</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="attractions-grid">
+                <!-- 景点卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化特色 -->
+    <section id="culture" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">文化特色</h2>
+                <p class="text-lg text-gray-600">感受九江深厚的历史文化底蕴</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">历史文化</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-scroll text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">古代文学</h4>
+                                <p class="text-gray-600">白居易《琵琶行》"浔阳江头夜送客"传颂千古</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-landmark text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">历史建筑</h4>
+                                <p class="text-gray-600">浔阳楼、锁江楼等古建筑见证历史变迁</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-palette text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">民俗文化</h4>
+                                <p class="text-gray-600">丰富的民间艺术和传统手工艺</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/21960793-b958-472d-bba6-60a99ac5dbaf/image_1755140996_3_1.jpg" 
+                         alt="浔阳楼" class="rounded-lg shadow-lg w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h4 class="text-xl font-bold">浔阳楼</h4>
+                        <p class="text-sm">江南十大名楼之一</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食特产 -->
+    <section id="food" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">特色美食</h2>
+                <p class="text-lg text-gray-600">品味九江地道美食与特产</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="food-grid">
+                <!-- 美食卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计数据 -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2 counter" data-target="2300">0</div>
+                    <div class="text-lg">年历史</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2 counter" data-target="490">0</div>
+                    <div class="text-lg">万人口</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2 counter" data-target="19">0</div>
+                    <div class="text-lg">个区县</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2 counter" data-target="100">0</div>
+                    <div class="text-lg">+景点</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">联系我们</h2>
+                <p class="text-lg text-gray-600">欢迎来九江旅游观光</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">地址</h3>
+                    <p class="text-gray-600">江西省九江市</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">电话</h3>
+                    <p class="text-gray-600">0792-12345678</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">邮箱</h3>
+                    <p class="text-gray-600">info@jiujiang.gov.cn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">九江旅游</h3>
+                    <p class="text-gray-400">江南名城，山水之都，欢迎您的到来！</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#attractions" class="text-gray-400 hover:text-white transition-colors">景点介绍</a></li>
+                        <li><a href="#culture" class="text-gray-400 hover:text-white transition-colors">文化特色</a></li>
+                        <li><a href="#food" class="text-gray-400 hover:text-white transition-colors">特色美食</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">旅游服务</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">酒店预订</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">交通指南</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">旅游路线</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-weixin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-weibo text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-qq text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 九江市旅游局. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
